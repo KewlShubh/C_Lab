@@ -15,10 +15,8 @@ int main()
     char b='o',c='@',a[]={"Welcome to C Programming"};
     printf("Enter the string: ");
     gets(a);
-    printf("Enter a character to replce: ");
-    scanf("%c",&b);
-    printf("Enter character to replace with: ");
-    scanf("%c",&c);
+    printf("Enter a character and replacing character:");
+    scanf("%c %c",&b,&c);
     printf("Before replace: %s",a);
     repchar(a,b,c);
     printf("\nAfter replace: %s",a);
