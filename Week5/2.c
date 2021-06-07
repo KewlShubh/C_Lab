@@ -12,7 +12,7 @@ void repchar(char a[100], char b, char c)
 
 int main()
 {
-    char b='o',c='@',a[]={"Welcome to C Programming"};
+    char b,c,a[100];
     printf("Enter the string: ");
     gets(a);
     printf("Enter a character and replacing character:");
