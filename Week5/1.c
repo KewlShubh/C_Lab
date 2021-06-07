@@ -6,11 +6,13 @@
 void reverse(char str[100])
 {
     char rev[100];
-    for(int i=0;str[i]!='\0';i++)
+    int i=0;
+    for(i=0;str[i]!='\0';i++)
     {
         rev[i] = str[strlen(str)-i-1];
         
     }
+    rev[i]='\0';
     printf("The string after reversing is: %s\n",rev);
     
 }
