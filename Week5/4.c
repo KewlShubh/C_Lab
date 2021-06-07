@@ -4,11 +4,12 @@ void concat(char s[100], char e[100],int n)
 {
     for(int i=0;i<n;i++)
     {
-        int c=strlen(s)+strlen(e);
-        for(int i=strlen(s),j=0;i<c;i++,j++)
+        int c=strlen(s)+strlen(e),i=strlen(s),j=0;
+        for(;i<c;i++,j++)
         {
             s[i]=e[j];
         }
+        s[i]='\0';
     }
     printf("Concatenated string is %s",s);
 }
