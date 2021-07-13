@@ -27,10 +27,15 @@ int bin_ser(int *a, int n, int s)
 
 void even(int *a, int n, int s)
 {
-    if (s % 2 == 0)
+    if (s % 2 == 0 && bin_ser(a, n, s) > -1)
     {
         printf("The number is even and found at position %d\n", bin_ser(a, n, s));
     }
+    else if (bin_ser(a, n, s) < 0)
+    {
+        printf("The number is even and not found in the array");
+    }
+
     else
     {
         printf("Not found\n");
@@ -39,9 +44,13 @@ void even(int *a, int n, int s)
 
 void lessthan22(int *a, int n, int s)
 {
-    if (s < 22)
+    if (s < 22 && bin_ser(a, n, s) > -1)
     {
         printf("The number is less than 22 and found at position %d\n", bin_ser(a, n, s));
+    }
+    else if (bin_ser(a, n, s) < 0)
+    {
+        printf("The number is less than 22 and not found in the array");
     }
     else
     {
